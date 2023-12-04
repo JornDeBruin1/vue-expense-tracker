@@ -63,7 +63,7 @@
         text: transactionData.text,
         amount: transactionData.amount,
       });
-      saveTransactionsToLocalStorage()
+      saveTransactionsToLocalStorage();
       toast.success('Transaction added');
     };
 
@@ -75,7 +75,7 @@
     //delete transaction
     const handleTransactionDeleted = (id) => {
       transactions.value = transactions.value.filter((transaction) => transaction.id !== id);
-      saveTransactionsToLocalStorage()
+      saveTransactionsToLocalStorage();
       toast.success('Transaction deleted');
     };
 

@@ -18,10 +18,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import{useToast} from 'vue-toastification'
+import{useToast} from 'vue-toastification';
  
-const text = ref('')
-const amount = ref('')
+const text = ref('');
+const amount = ref('');
 
 const emit = defineEmits(['transactionSubmitted']);
 
