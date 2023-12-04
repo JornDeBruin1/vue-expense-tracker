@@ -31,11 +31,11 @@ const onSubmit = () => {
     if(!text.value || !amount.value){
         toast.error('both fields must be filled');
         return;
-        }
+    }
     
    const transactionData = {
-    text: text.value,
-    amount: parseFloat(amount.value),
+        text: text.value,
+        amount: parseFloat(amount.value),
    }
    emit('transactionSubmitted', transactionData);
     text.value = '';

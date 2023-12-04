@@ -33,7 +33,7 @@
     //get total
     const total = computed(()=>{
       return transactions.value.reduce((acc, transaction) => {
-         return acc + transaction.amount;
+        return acc + transaction.amount;
       },0);
     }); 
 
@@ -42,7 +42,7 @@
       return transactions.value
       .filter((transaction) => transaction.amount > 0)
       .reduce((acc, transaction) => {
-         return acc + transaction.amount;
+        return acc + transaction.amount;
       },0).toFixed(2);
     }); 
 
@@ -51,7 +51,7 @@
       return transactions.value
       .filter((transaction) => transaction.amount < 0)
       .reduce((acc, transaction) => {
-         return acc + transaction.amount;
+        return acc + transaction.amount;
       },0).toFixed(2);
     }); 
 
